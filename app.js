@@ -1,3 +1,5 @@
-const math = require("./math");
-console.log(math.add(5, 3));
-console.log(math.multiply(4, 2));
+const fs = require("fs");
+fs.readFile("message.txt", "utf8", (err, data) => {
+  if (err) throw err;
+  console.log("File content:", data);
+});
